@@ -4,5 +4,5 @@ require("core.options")
 --require("settings.theme")
 
 require("core.lazy")
-
+require("core.plugins.tokyonight")
 
