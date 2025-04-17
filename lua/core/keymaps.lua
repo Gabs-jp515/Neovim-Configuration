@@ -19,7 +19,6 @@ vim.keymap.set('n', '<leader>hf', function()
 	local file = vim.fn.input("Insert filename: ")
 	vim.cmd(string.format("split %s", file))
 end)
-vim.keymap.set('n', '<leader>tr',  vim.cmd.terminal )
 
 --Word Management
 vim.keymap.set('n', '<leader>fw', function() 
@@ -119,16 +118,4 @@ vim.keymap.set('n', '<leader>gl', vim.cmd.GitGutterEnable)
 vim.keymap.set('n', '<leader>gr', vim.cmd.Neogit)
 
 --Harpoon
-local mark = require("harpoon.mark")
-local ui = require("harpoon.ui")
-
-vim.keymap.set('n', '<leader>ha', mark.add_file)
-vim.keymap.set('n', '<leader>hm', ui.toggle_quick_menu)
-
-vim.keymap.set('n', '<leader>h1', function() ui.nav_file(1) end)
-vim.keymap.set('n', '<leader>h2', function() ui.nav_file(2) end)
-vim.keymap.set('n', '<leader>h3', function() ui.nav_file(3) end)
-vim.keymap.set('n', '<leader>h4', function() ui.nav_file(4) end)
-vim.keymap.set('n', '<leader>h5', function() ui.nav_file(5) end)
-
 

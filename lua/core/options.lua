@@ -7,7 +7,9 @@ opt.cursorline = true         -- Highlight current line
 opt.termguicolors = true      -- Enable true color support
 opt.signcolumn = "yes"        -- Always show sign column
 opt.scrolloff = 19             -- Keep 8 lines visible above/below cursor
+opt.sidescrolloff = 9             -- Keep 8 lines visible above/below cursor
 opt.wrap = false              -- Don't wrap long lines
+opt.switchbuf = { "useopen", "usetab", "newtab" }
 
 -- Tabs & Indentation
 opt.expandtab = true          -- Convert tabs to spaces
