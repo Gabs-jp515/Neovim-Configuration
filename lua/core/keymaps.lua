@@ -22,6 +22,6 @@ end)
 
 --Word Finding
 vim.keymap.set('n', '<leader>fw', function() 
-    --local word  
-
+    local word = vim.fn.input("Grep > ")
+     
 end)
