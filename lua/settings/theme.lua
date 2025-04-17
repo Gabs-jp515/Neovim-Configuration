@@ -1,7 +1,9 @@
 -- settings/theme.lua
 
+local theme = require("utils.col-scheme")
+
 -- Set your preferred colorscheme
-vim.cmd.colorscheme("tokyonight")  -- or "tokyonight", "gruvbox", etc.
+vim.cmd.colorscheme(theme.get_current_theme())  -- or "tokyonight", "gruvbox", etc.
 
 -- Make background transparent
 local transparent_groups = {
