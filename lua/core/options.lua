@@ -6,7 +6,7 @@ opt.relativenumber = true     -- Show relative line numbers
 opt.cursorline = true         -- Highlight current line
 opt.termguicolors = true      -- Enable true color support
 opt.signcolumn = "yes"        -- Always show sign column
-opt.scrolloff = 8             -- Keep 8 lines visible above/below cursor
+opt.scrolloff = 19             -- Keep 8 lines visible above/below cursor
 opt.wrap = false              -- Don't wrap long lines
 
 -- Tabs & Indentation
@@ -20,7 +20,7 @@ opt.smartindent = true        -- Smart autoindenting on new lines
 opt.ignorecase = true         -- Case-insensitive search...
 opt.smartcase = true          -- ...unless you use capital letters
 opt.incsearch = true          -- Show match while typing
-opt.hlsearch = false          -- Don't highlight all matches after search
+opt.hlsearch = true          -- Don't highlight all matches after search if set false
 
 -- Files
 opt.undofile = true           -- Save undo history
