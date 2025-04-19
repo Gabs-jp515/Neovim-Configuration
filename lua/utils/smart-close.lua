@@ -4,16 +4,17 @@ vim.keymap.set('n', 'q', function()
     if not modified then
         vim.cmd('q')
 
-    else
-        local choice = vim.fn.input("Do you wanto to save changes (y/n): ")
+    elseif modified then
+        local choice = vim.fn.input("Do you want to to save changes (y/n): ")
     
         if choice == y then
-            vim.cmd("wq")
+            vim.cmd("write")
+            vim.cmd("quit")
         
         elseif choice == n then
-            vim.cmd("q!")
+            vim.cmd("quit!")
         else
            print("") 
         end
     end
-end, { desc = "Smart Close" }
+end, { desc = "Smart Close" })

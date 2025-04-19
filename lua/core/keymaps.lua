@@ -1,6 +1,9 @@
 --Leader Key
 vim.g.mapleader = " "
 
+--Lazy
+vim.keymap.set('n', '<leader>l', vim.cmd.Lazy)
+
 --Explorer
 vim.keymap.set('n', '<leader>pv', function() vim.cmd.w(); vim.cmd.Ex() end)
 
@@ -19,17 +22,16 @@ vim.keymap.set('n', '<leader>hf', function()
 	local file = vim.fn.input("Insert filename: ")
 	vim.cmd(string.format("split %s", file))
 end)
-vim.keymap.set('n', '<leader>tr',  vim.cmd.terminal )
 
 --Word Management
-vim.keymap.set('n', '<leader>fw', function() 
+--[[vim.keymap.set('n', '<leader>fw', function() 
 	local word = vim.fn.input("Grep Word > ")
 	vim.cmd(string.format("/\\<%s\\>", word))
 end)
 vim.keymap.set('n', '<leader>f', function() 
 	local word = vim.fn.input("Grep > ")
 	vim.cmd(string.format("/%s", word))
-end)
+end)]]
 vim.keymap.set('n', '<leader>dw', 'diw', { silent = true, noremap = true })
 
 local comment_strings = {
@@ -119,6 +121,7 @@ vim.keymap.set('n', '<leader>gl', vim.cmd.GitGutterEnable)
 vim.keymap.set('n', '<leader>gr', vim.cmd.Neogit)
 
 --Harpoon
+<<<<<<< HEAD
 --[[local mark = require("harpoon.mark")
 local ui = require("harpoon.ui")
 
@@ -131,4 +134,9 @@ vim.keymap.set('n', '<leader>h3', function() ui.nav_file(3) end)
 vim.keymap.set('n', '<leader>h4', function() ui.nav_file(4) end)
 vim.keymap.set('n', '<leader>h5', function() ui.nav_file(5) end)]]
 
+=======
+--See plugins/harpoon.lua file
+>>>>>>> dev
 
+--Telescope
+--See plugins/telescope.lua
