@@ -1,12 +1,4 @@
 return {
-<<<<<<< HEAD
-    'ThePrimeAgen/harpoon',
-    lazy = false,
-    config = function()
-        local mark = require("harpoon.mark")
-        local ui = require("harpoon.ui")
-    end, 
-=======
 	'ThePrimeAgen/harpoon',
 	lazy = false,
 	config = function()
@@ -23,5 +15,4 @@ return {
 		vim.keymap.set('n', '<leader>h5', function() ui.nav_file(5) end)
 
 	end, 
->>>>>>> dev
 }
