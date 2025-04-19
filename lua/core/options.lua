@@ -10,6 +10,7 @@ opt.scrolloff = 19             -- Keep 8 lines visible above/below cursor
 opt.sidescrolloff = 9             -- Keep 8 lines visible above/below cursor
 opt.wrap = false              -- Don't wrap long lines
 opt.switchbuf = { "useopen", "usetab", "newtab" }
+vim.g.netrw_liststyle = 1
 
 -- Tabs & Indentation
 opt.expandtab = true          -- Convert tabs to spaces
@@ -30,7 +31,7 @@ opt.swapfile = false          -- No swap file
 opt.backup = false            -- No backup file
 
 -- Performance
-opt.updatetime = 300          -- Faster completion
+opt.updatetime = 150          -- Faster completion
 opt.timeoutlen = 700          -- Shorter time for mapped sequence to complete
 
 -- Clipboard
